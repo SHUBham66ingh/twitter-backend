@@ -18,4 +18,6 @@ model User{
 
 model testing{
   id    Int     @id @default(autoincrement())
+  num Int
+  name String
 }
