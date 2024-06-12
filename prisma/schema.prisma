@@ -9,5 +9,13 @@ datasource db {
 }
 
 model User{
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  username String @unique
+  firstname  String?
+  lastName String?
+}
 
+model testing{
+  id    Int     @id @default(autoincrement())
 }
